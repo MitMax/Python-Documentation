@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Python Documentation</title>
+
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+      *{
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0px 0px;
+        grid-template-areas:
+          "navbar Introduction"
+          "navbar Hello_World"
+          "navbar Variables"
+          "navbar Lists"
+          "navbar Strings";
+}
+
+#Introduction{
+  grid-area: Introduction;
+  position: relative;
+  margin-left: 150px; 
+ }
+
+#Hello_World { 
+  grid-area: Hello_World;
+  position: relative;
+  margin-left: 150px; 
+  }
+
+#Variables { 
+  grid-area: Variables; 
+  position: relative;
+  margin-left: 150px; 
+  }
+#Lists { 
+  grid-area: Lists;
+  position: relative;
+  margin-left: 150px; 
+  }
+
+#Strings {
+  grid-area: Strings; 
+  position: relative;
+  margin-left: 150px; 
+ }
+
+
+      h2{
+        font-size: 30px;
+      }
+
+      p{
+        line-height: 25px;
+        font-size: 18px;
+      }
+
+      code{
+        margin-left: 20px;
+      }
+
+      .list{
+        margin-left: 130px;
+      }
+
+      #navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: #365673;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+      }
+
+      .head{
+        position: fixed;
+        font-size: 18px;
+        color: #EBEFF2;
+        text-align: center;
+        line-height: 70px;
+        background: #6D8BA6;
+        user-select: none;
+        top: 0;
+        width: 300px;
+        max-width: 300px;
+      }
+
+      .nav-bar{
+        position: fixed;
+        font-size: 25px;
+        color: #EBEFF2;
+        margin-left: 30px;
+        top: 110px;
+        overflow: hidden;
+        z-index: 1;
+        left: 0;
+        grid-area: navbar;
+      }
+
+      .nav-link{
+        position: relative;
+        margin-bottom: 10px;
+        color: #EBEFF2;
+      }
+
+      .nav-link:visited{
+        color: #EBEFF2;
+      }
+
+      #main-doc{
+        margin-left: 150px;
+      }
+
+      @media screen and (min-width: 1000px;){
+#Introduction{
+  margin-left: 80px; 
+ }
+
+#Hello_World { 
+  margin-left: 80px; 
+  }
+
+#Variables { 
+  margin-left: 80px; 
+  }
+#Lists { 
+  margin-left: 80px; 
+  }
+
+#Strings {
+  margin-left: 80px; 
+ }
+
+#main-doc{
+  margin-left: 80px;
+ } 
+
+}
+
+    </style>
+
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header class="head">
+        <h1>Python Documentation</h1>
+      </header>
+      <div class="nav-bar">
+      <p><a class="nav-link" href="#Introduction">Introduction</a></p>
+      <p><a class="nav-link" href="#Hello_World">Hello World</a></p>
+      <p><a class="nav-link" href="#Variables">Variables</a></p>
+      <p><a class="nav-link" href="#Lists">Lists</a></p>
+      <p><a class="nav-link" href="#Strings">Strings</a></p>
+    </div>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" id="main-doc" class="main-section">
+        <header id="Introduction">
+          <h2>Introduction</h2>
+        </header>
+        <p id="main-doc">This Python Documentation will give you a short overview about some simple Python stuff. <br><br>
+          Python has a simple syntax similar to the English language. <br>
+          It has syntax that allows developers to write programs
+          with fewer lines than some other programming languages.</p>
+      </section>
+      <br>
+      <section id="Hello_World" id="main-doc" class="main-section">
+        <header id="Hello_World">
+          <h2>Hello World</h2>
+        </header>
+        <p id="main-doc">To get started, simply open your text editor and later save the file as .py. <br><br>
+           <code>print("Hello World")</code></p><br>
+        <p id="main-doc">To run the file, open CMD, navigate to your file and execute it with "python hello-world.py".</p>
+      </section>
+      <br>
+      <section id="Variables" id="main-doc" class="main-section">
+        <header id="Variables">
+          <h2>Variables</h2>
+        </header>
+        <p id="main-doc">
+           Variables are containers for storing data values. <br> <br>
+           Python has no command for declaring a variable. <br>
+           A variable is created the moment you first assign a value to it.</p> <br>
+        <p id="main-doc">
+           <code>x = 5</code> <br>
+           <code>y = "John"</code> <br> <br>
+           You can use both single('') or double("") quotes. <br><br><br>
+           Variable names are also case-sensitive, so <br> <br>
+           <code>A = "hello"</code> <br><br>
+           is different variable than <br><br>
+           <code>a = "hello"</code> <br><br>
+           Here are 5 arithmetic operator that you can weork with: <br><br>
+           <ul class="list">
+             <li>+  ~  Addition</li> <br>
+             <li>-  ~  Subtraction</li> <br>
+             <li>*  ~  Multiplication</li> <br>
+             <li>/  ~  Division</li> <br>
+             <li>**  ~  Exponentiation</li> <br>
+           </ul>
+        </p>
+      </section>
+      <br>
+      <section id="Lists" id="main-doc" class="main-section">
+        <header id="Lists">
+          <h2>Lists</h2>
+        </header>
+        <p id="main-doc">
+          Lists are used to store multiple items in a single variable. </p><br>
+        <p id="main-doc">
+          Lists are declared like variables, so they can be named anything. <br><br><br>
+          They are created using square brackets: <br><br>
+          <code>list = ["apple", "banana", "cherry"]</code> <br><br>
+          You can then get the list printed by typing: <br><br>
+          <code>print(list)</code>
+        </p>
+      </section>
+      <br>
+      <section id="Strings" id="main-doc" class="main-section">
+        <header id="Strings">
+          <h2>Strings</h2>
+        </header>
+        <p id="main-doc">
+          Strings in python are surrounded by either single quotation marks, or double quotation marks. <br><br>
+          <code>'hello' is the same as "hello".</code></p><br>
+        <p id="main-doc">
+          You can display a string literal with the print() function: <br><br>
+          <code>print("Hello")</code> <br> <br>
+          or <br> <br>
+          <code>print('Hello')</code>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
